@@ -1,26 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,800&display=swap');
+
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+
+:root {
+        --off-white: hsl(36, 100%, 99%);
+        --grayish-blue: hsl(233, 8%, 79%);
+        --dark-grayish-blue: hsl(236, 13%, 42%);
+        --very-dark-blue: hsl(240, 100%, 5%);
+}
+
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 0.925rem;
+
+
+  font-family: "Inter", system-ui;
 }
 
 a {
   text-decoration: none;
-}
-
-.container {
-  width: 1170px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .navbar,
@@ -227,45 +230,17 @@ body {
   grid-gap: 1em;
 }
 
-.main-section  {
-        display:flex;
-     flex-flow: wrap;
-}
 
-h1 {
-    width:200px;
-    height:200px;
-}
-
-
-.minor-txt {
-    font-size: 18px;
-    width:200px;
-    height:200px;
-
-
-}
-
-}
-
-.lead-text {
-    grid-row: 2;
-
-}
 
 footer {
   grid-column: 1 / span 2;
 }
 
 
-
-
 nav.navbar {
     grid-column: 1 / span 2;
     grid-row: 1;
 }
-
-
 
 /* Demo Specific Styles */
 body {
@@ -274,23 +249,20 @@ body {
   padding: 1em 0;
 }
 
-
-
 main {
     background: #eaeaea;
     grid-column: 1 / span 1;
     grid-row: 2;
     display: flex;
-
 }
 
 aside {
-    grid-column: 2;
-    grid-row: 2;
+  background-color: var(--very-dark-blue);
+    display: grid;
+    color: #eaeaea;
 }
 
 
-aside,
 footer {
   background: #eaeaea;
   display: flex;
@@ -298,9 +270,58 @@ footer {
   justify-content: center;
 }
 
+.main-section  {
+  display:grid;
+  width: 750px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
+  padding: 1em;
+}
+
+.minor-txt {
+width: 325px;
+height: 200px;
+grid-column: 2 / span 2;
+grid-row: 2;
+line-height: 1.8em; 
+color: hsl(236, 13%, 42%);
+font-size: 16px;
+}
+
+
+.lead-text {
+font-weight: 800;
+width: 300px;
+height: 225px;
+grid-row: 2;
+
+h1 {
+  font-size: 55px;
+  color:  hsl(240, 100%, 5%);
+  font-family: "Inter", system-ui;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+
+}
+
 img#main-pic {
-    width: 720px;
-    height: 275px;
-    grid-column: 1 /2;
-    grid-row: 1;
+  width: 720px;
+  height: 275px;
+  grid-column: 1 /2;
+  grid-row: 1;
+}
+
+.read-btn.read-btn {
+  margin-top: 15%;
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+  color:hsl(36, 100%, 99%);
+  width: 100%;
+  padding: .75rem;
+ 
+  width: 200px;
+  height: 60px;
+  letter-spacing: 3px;
 }

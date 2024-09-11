@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,800&display=swap" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +27,9 @@
         <span></span>
       </button>
       <a href="#">
-        <h4>Your<span>Logo</span></h4>
+        <div class="logo-header">
+        <img src="./assets/images/logo.svg" alt="">
+        </div>
       </a>
     </div>
 
@@ -56,18 +63,24 @@
   
           <div class="lead-text">
                 <h1> The Bright Future of Web 3.0? </h1>
-
-          <div class="minor-text">
-                <p class="minor-txt"> We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-          <label class="read-btn"></label>
-          <button type="text" name="read-btn">Read more</button>
+          </div>  
+          <div class="minor-txt">
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+          
+          <div class="text-btn">
+                <button type="submit" id="read-btn" class="read-btn">READ MORE</button>
+          </div>
+          </div>
     </div>
 </main>
 
 
 <aside>
  
- 
+ <div class="top-aside"></div>
+ <div class="mid-aside"></div>
+ <div class="bot-aside"></div>
+
  New 
  Hydrogen VS Electric Cars
   Will hydrogen-fueled cars ever catch up to EVs?
