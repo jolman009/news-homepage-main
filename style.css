@@ -226,8 +226,8 @@ a {
 
 body {
   display: grid;
-  grid-template-columns: 70% 30%;
-  grid-template-rows: 8vw 45vw 15vw;
+  grid-template-columns: 67% 33%;
+  grid-template-rows: 8vw 40vw 10vw;
   grid-gap: 1em;
 }
 
@@ -259,12 +259,12 @@ aside {
     display: grid;
     color: #eaeaea;
     padding: 1.55em;
-    width: 350px;
+    width: 375px;
 }
 
 .top-aside > h2 {
     margin-top: 10px;
-    font-size: 36px;
+    font-size: 44px;
     color: var(--soft-orange);
     cursor: pointer;
 }
@@ -273,7 +273,7 @@ aside {
 h3 {
   margin-top: 30px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 
@@ -342,11 +342,9 @@ img#main-pic {
   letter-spacing: 3px;
 }
 
-
-
-
-
-
+hr.solid {
+  border-top: 1px solid #bbb;
+}
 
 /*
 footer {
@@ -361,9 +359,13 @@ footer {
 
 
 .footer-clean {
-  padding:50px 0;
-  background-color:#fff;
+   background-color:#fff;
   color:#4b4c4d;
+  width: 1200px;
+  border: 2px solid black;
+  display: flex;
+flex-direction: row;
+
 }
 
 .footer-clean h3 {
@@ -371,6 +373,13 @@ footer {
   margin-bottom:12px;
   font-weight:bold;
   font-size:16px;
+}
+
+.footer-clean p {
+  margin-top:-20px;
+  margin-bottom:20px;
+  font-weight:500;
+  font-size:12px;
 }
 
 .footer-clean ul {
@@ -391,9 +400,9 @@ footer {
   opacity:1;
 }
 
-.footer-clean .item.social {
-  text-align:right;
-}
+
+
+
 
 @media (max-width:767px) {
   .footer-clean .item {
@@ -402,46 +411,5 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  .footer-clean .item.social {
-    text-align:center;
-  }
-}
 
-.footer-clean .item.social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
-  display:inline-block;
-  text-align:center;
-  border-radius:50%;
-  border:1px solid #ccc;
-  margin-left:10px;
-  margin-top:22px;
-  color:inherit;
-  opacity:0.75;
-}
 
-.footer-clean .item.social > a:hover {
-  opacity:0.9;
-}
-
-@media (max-width:991px) {
-  .footer-clean .item.social > a {
-    margin-top:40px;
-  }
-}
-
-@media (max-width:767px) {
-  .footer-clean .item.social > a {
-    margin-top:10px;
-  }
-}
-
-.footer-clean .copyright {
-  margin-top:14px;
-  margin-bottom:0;
-  font-size:13px;
-  opacity:0.6;
-}
